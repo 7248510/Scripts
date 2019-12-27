@@ -24,5 +24,11 @@ ena()
 {
 	sudo scl enable rh-python36 bash
 }
+net()
+{
+#Only run this module if the script is being run on the host server
+	sudo sysctl -w net.ipv4.ip_forward=0
+	#This stops duplicate packets via VirtualBox
+}
 ena
 install
