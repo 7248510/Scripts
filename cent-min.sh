@@ -1,6 +1,6 @@
 #/usr/bin/sh
 #Parameters
-#cl = Command line #
+#cl = Command line 
 #comp = Component #, if you don't want a component just comment out one of the array slots
 install()
 {
@@ -27,8 +27,18 @@ ena()
 net()
 {
 #Only run this module if the script is being run on the host server
-	sudo sysctl -w net.ipv4.ip_forward=0
-	#This stops duplicate packets via VirtualBox
+	sudo sysctl -w net.ipv4.ip_forward=0 
+	#This stops duplicate packets via VirtualBox.
+	#Caution(Don't run this unless you are having the duplicate packets issue. Caused problems for my cyber security server.
 }
+geo()
+{
+	#https://unix.stackexchange.com/questions/224487/uninstall-geoclue-from-debian
+	#Disabling geoclue will stop the selinux notification.
+	sudo systemctl disable geoclue.service
+	sudo systemctl mask geoclue.service
+}
+
 ena
 install
+geo
