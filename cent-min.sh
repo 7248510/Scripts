@@ -13,12 +13,12 @@ install()
 	comp[3]="git"
 	comp[4]="centos-release-scl"
 	comp[5]="rh-python36"
-	echo "$c11 $cl2 $cl3 ${comp[0]}"
-	echo "$c11 $cl2 $cl3 ${comp[1]}"
-	echo "$c11 $cl2 $cl3 ${comp[2]}"
-	echo "$c11 $cl2 $cl3 ${comp[3]}"
-	echo "$c11 $cl2 $cl3 ${comp[4]}"
-	echo "$c11 $cl2 $cl3 ${comp[5]}"
+	$c11 $cl2 $cl3 ${comp[0]}
+	$c11 $cl2 $cl3 ${comp[1]}
+	$c11 $cl2 $cl3 ${comp[2]}
+	$c11 $cl2 $cl3 ${comp[3]}
+	$c11 $cl2 $cl3 ${comp[4]}
+	$c11 $cl2 $cl3 ${comp[5]}
 }
 ena()
 {
@@ -38,7 +38,12 @@ geo()
 	sudo systemctl disable geoclue.service
 	sudo systemctl mask geoclue.service
 }
+update()
+{
+	sudo yum update
+}
 
-ena
 install
+ena
 geo
+update
