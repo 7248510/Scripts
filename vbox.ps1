@@ -35,7 +35,7 @@ echo $comb
 powershell $comb
 #VBoxManage.exe clonehd --format vhd "C:\temp\VM\disk1.vmdk" "C:\temp\VM\disk1.vhd"
 <#
-Sample output, tested on Windows 10 and successfully imported to Hyper-V (Windows Server 2019)
+Sample output, tested on Windows 10 (Metasploitable3 won't import.)
 .\vbox.ps1
 Looking for any vmdk files in C:\Users\%username%\Desktop
 -a----       12/14/2019     12:48     2163096064 Metasploitable3-ub1404-disk001.vmdk
