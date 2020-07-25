@@ -39,7 +39,6 @@ if (selection == 1):
         print("Restarting Nginx...")
         subprocess.call("systemctl restart nginx", shell=True)
         print("Nginx has restarted.")
-    if (catalyst == 4):
       
 
 if (selection == 2):
