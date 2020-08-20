@@ -20,7 +20,7 @@ reboot()
 {
     sudo reboot -h now #Rebooting Centos, this isn't necessary.
 }
-vbRemove()
-vbGrab()
-vbInstall()
-reboot()
+vbRemove
+vbGrab
+vbInstall
+reboot
