@@ -3,6 +3,7 @@
 #Tested on CentOS7
 install()
 {
+  sudo yum install git -y 
   sudo yum install python3 -y #For cent. Ubuntu = sudo apt-get install python3    Python3 might be installed by default on Ubuntu 
   sudo python3 -m pip install argh
   sudo python -m pip install opencv-python
@@ -22,6 +23,11 @@ update()
 {
 	sudo yum update
 }
+gitme()
+{
+	git clone https://github.com/7248510/CSE-Analytics.git
+}
 install
+gitme
 showIP
 #update
