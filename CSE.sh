@@ -3,7 +3,7 @@
 #Tested on CentOS7
 install()
 {
-  sudo yum install python3 #For cent. Ubuntu = sudo apt-get install python3    Python3 might be installed by default on Ubuntu 
+  sudo yum install python3 -y #For cent. Ubuntu = sudo apt-get install python3    Python3 might be installed by default on Ubuntu 
   sudo python3 -m pip install argh
   sudo python -m pip install opencv-python
   sudo python -m pip install flask
