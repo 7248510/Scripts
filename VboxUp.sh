@@ -12,11 +12,11 @@ vbGrab()
 {
     #Grabbing the RPM, change the url with each update.
     echo "Grabbing the updated RPM"
-    curl -O https://download.virtualbox.org/virtualbox/6.1.12/VirtualBox-6.1-6.1.12_139181_el7-1.x86_64.rpm
+    curl -O https://download.virtualbox.org/virtualbox/6.1.16/VirtualBox-6.1-6.1.16_140961_el7-1.x86_64.rpm
 }
 vbInstall()
 {
-    #sudo rpm -i VirtualBox-6.1-6.1.12_139181_el7-1.x86_64.rpm #Specific RPM, if you have multiple Virtualbox RPM'S in a directory
+    #sudo rpm -i VirtualBox-6.1-6.1.16_140961_el7-1.x86_64.rpm #Specific RPM, if you have multiple Virtualbox RPM'S in a directory
     echo "Installing the new VirtualBox RPM"
     sudo rpm -i VirtualBox* #The automatic option, If you have Virtualbox*.exe, Linux may try to run the exe(if it's in the same directory.)
 }
