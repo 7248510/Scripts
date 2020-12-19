@@ -30,13 +30,13 @@ addPackage()
 }
 externalURL()
 {
-    #for this step I recommend finding your IP address from viewing ip a's output or viewing DHCP leases or setting a static ip address
+    #for this step I recommend finding your IP address from viewing ip a's output or viewing DHCP leases or setting a static ip address before you run this. (An internet connection is required for this step!)
     # sudo EXTERNAL_URL="https://gitlab.example.com" yum install -y gitlab-ee # ENTERPRISE
-    sudo EXTERNAL_URL="https://gitlab.example.com" yum install -y gitlab-ce
+    sudo EXTERNAL_URL="GITLAB URL OF YOUR CHOICE" yum install -y gitlab-ce
 }
 # Phase 1
 gitlabInstall
 enableServices
 addPackage
-
+#externalURL #Uncomment this after you change gitlab URL!
 #You can install everything and then toggle the externalURL which actually installs the package
