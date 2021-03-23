@@ -18,7 +18,7 @@ vscInstall()
 
 pipHome() {
   #Change the username 
-  /home/caleb/.local/bin
+  #/home/caleb/.local/bin #PATH
   export PATH="$PATH:/home/caleb/.local/bin"
   source ~/.profile 
   source ~/.bashrc
