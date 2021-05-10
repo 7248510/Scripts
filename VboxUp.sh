@@ -12,7 +12,7 @@ vbGrab()
 {
     #Grabbing the RPM, change the url with each update.
     echo "Grabbing the updated RPM"
-    curl -O https://download.virtualbox.org/virtualbox/6.1.16/VirtualBox-6.1-6.1.16_140961_el7-1.x86_64.rpm
+    curl -O https://download.virtualbox.org/virtualbox/6.1.22/VirtualBox-6.1-6.1.22_144080_el7-1.x86_64.rpm
 }
 vbInstall()
 {
